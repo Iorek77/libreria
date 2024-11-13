@@ -1,0 +1,30 @@
+Voy a crear un software simple para administrar una libreria con el proposito de agilizar el proceso y complementar o reemplazar el uso de papel:
+Suponiendo una libreria de alto trafico, quiero crear un software que sea extremadamente intuitivo con interfaz grafica (si me da el tiempo) incluso para aquellos que no manejan muy bien una computadora. Los dos objetivos principales son, agilizar el proceso para la gestion rapida y facil de la biblioteca, y de ser posible, reemplazar el uso de papel por algo mucho mas practico e intangible que libere espacio fisico en la libreria.
+
+Funciones del menu:
+Ingresar una contraseña para entrar al menu:
+
+Crear libros y agregarlos al inventario/catalogo.
+Modificar libros.
+Rentar libros y agregar los datos de la renta a una lista.
+Crear usuarios y agregarlos a la base de datos de usuarios.
+Ver catalogo.
+Salir.
+
+1. Crear clases:
+Libros: una clase que contenga nombre, genero literario, cantidad disponible, autor y una breve descripcion del mismo.
+Usuarios: una clase para registrar usuarios en la biblioteca que guarde nombre y contraseña, nombre de usuario, cedula, email, telefono.
+Renta: una clase que guarde que libro se llevo un usuario, y cuando debe devolverlo.
+
+2. Crear arraylists:
+Necesito una serie de arraylists: 
+Inventario/catalogo de la libreria.
+Usuarios.
+Libros rentados.
+
+3. Crear metodos:
+Registro de usuario
+Registro de libros
+Modificacion de usuario
+Modificacion de libros
+
