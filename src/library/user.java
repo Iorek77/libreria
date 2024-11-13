@@ -1,14 +1,11 @@
-
 package library;
 
-
 public class user {
-    String nickname, username, password, email, phone, id;
 
-    public user(String nickname, String username, String password, String email, String phone, String id) {
-        this.nickname = nickname;
+    String nickname, username, email, phone, id;
+
+    public user(String username, String email, String phone, String id) {
         this.username = username;
-        this.password = password;
         this.email = email;
         this.phone = phone;
         this.id = id;
@@ -38,14 +35,6 @@ public class user {
         this.id = id;
     }
 
-    public String getNickname() {
-        return nickname;
-    }
-
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
-    }
-
     public String getUsername() {
         return username;
     }
@@ -54,11 +43,4 @@ public class user {
         this.username = username;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }

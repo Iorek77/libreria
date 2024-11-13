@@ -1,16 +1,23 @@
-
 package library;
 
-
 public class book {
-    String nombre, autor, genero;
-    int id;
 
-    public book(String nombre, String autor, String genero, int id) {
+    String nombre, autor, genero;
+    int id, quantity;
+
+    public book(String nombre, String autor, String genero, int quantity) {
         this.nombre = nombre;
         this.autor = autor;
         this.genero = genero;
-        this.id = id;
+        this.quantity = quantity;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public String getNombre() {
@@ -36,14 +43,5 @@ public class book {
     public void setGenero(String genero) {
         this.genero = genero;
     }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-    
 
 }
