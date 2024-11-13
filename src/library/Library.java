@@ -9,6 +9,7 @@ public class Library {
     private static book LOTR = new book("Lord of the Rings", "Tolkien", "Fantasy", 3);
     private static book DQ = new book("Don Quixote", "Miguel de Cervantes", "Novel", 4);
     private static book Shogun = new book("Shogun", "James Clavell", "Historical Fiction", 6);
+    private static user admin = new user("Admin", "admin@gmail.com", "01010101", "10101010");
     static ArrayList<book> catalogo = new ArrayList<>();
     static ArrayList<user> userlist = new ArrayList<>();
 
@@ -164,6 +165,10 @@ public class Library {
         catalogo.add(LOTR);
         catalogo.add(DQ);
         catalogo.add(Shogun);
+        userlist.add(admin);     
+        System.out.println("Ingrese la clave de acceso.");
+        String key = input.next();
+        if(key.equals("covfefe")){
         Boolean loopmenu = true;
         do {
             System.out.println("Menu principal.");
@@ -208,5 +213,7 @@ public class Library {
                     break;
             }
         } while (loopmenu == true);
-    }
+    } else
+            System.out.println("Clave incorrecta");
+}
 }
